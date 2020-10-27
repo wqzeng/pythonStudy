@@ -1,4 +1,7 @@
 classmate=['moke','john','jet','mike']
+print(classmate)
+#sorted(classmate)
+print("排序后：",sorted(classmate))
 print("classmate len:",len(classmate))
 print(classmate[-2])   #-1最后元素索引,-2倒数第二
 classmate.append('jonh')
