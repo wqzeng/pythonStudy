@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-' a test module'
+' a test module'               #表示模块的文档注释，任何模块代码的第一个字符串都被视为模块的文档注释；
 __author__ = "moke.tsang"
 
 import sys
+import numbers
 
 
 def hello():

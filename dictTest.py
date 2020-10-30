@@ -6,3 +6,4 @@ if 'Michael' in d :
     d.pop('Michael')
 
 print(d)
+print('%s:%s' %(d['Tracy'],d['Bob']))
