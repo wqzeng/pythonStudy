@@ -1,24 +1,13 @@
 # -*- coding:utf-8 -*-
 
 from multiprocessing import Process
-import time
 import os
 
+def plus():
+    print('-----子进程1开始--------')
+    global g_num
+    g_num+=50
 
-class SubProcess(Process):
-    def __init__(self, interval, name=''):
-        Process.__init__(self)
-        self.interval = interval
-        if name:
-            self.name = name
-
-    # 重写Process类的run()方法
-    def run(self):
-        print("子进程（%s）开始执行，父进程为（%s）" % (os.getpid(), os.getppid()))
-        t_start = time.time()
-        time.sleep(self.interval)
-        t_stop = time.time()
-        print("子进程（%s）执行结束，耗时%0.2f秒" % (os.getpid(), t_stop - t_start))
 
 
 if __name__ == "__main__":
